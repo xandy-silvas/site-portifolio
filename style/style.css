@@ -1,33 +1,9 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body{
     background-image: url(https://mcdn.wallpapersafari.com/medium/53/18/pgdaL9.jpg);
     background-size: auto 100vh;
     font-family: 'Roboto', sans-serif;
     height: 100vh;
     font-size: 10px;
-}
-
-@media (min-width: 400px){
-    body{
-        font-size: 14px;
-    }
-}
-
-@media (min-width: 600px){
-    body{
-        font-size: 18px;
-    }
-}
-
-@media (min-width: 1200px){
-    body{
-        font-size: 20px;
-    }
 }
 
 header{
@@ -90,13 +66,20 @@ a:hover{
     line-height: 1.8em;
 }
 
+.sobre a{
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.sobre,
 .contato,
 .portfolio{
     padding: 2em;
     min-height: 100vh;
-
 }
 
+.sobre h2,
 .contato h2,
 .portfolio h2{
     color: whitesmoke;
@@ -108,21 +91,6 @@ a:hover{
 .portfolio .grid{
     display: grid;
     gap: 2em;
-}
-
-@media (min-width: 560px){
-    .portfolio .grid{
-        grid-template-columns: 240px 240px;
-    }
-}
-
-@media (min-width: 880px){
-    .portfolio .grid{
-        grid-template-columns: repeat(2, 260px);
-        align-content: center;
-        justify-content: center;
-        height: calc(100vh - 4em - 48px - 1.5em);
-    }
 }
 
 .portfolio figure{
@@ -139,13 +107,6 @@ a:hover{
 
 .img-portfolio:hover{
     transform: scale(1.5);
-}
-
-@media (min-width: 1200px){
-.img-portfolio{
-    height: auto;
-    width: 100%;
-}
 }
 
 .contato .icon{
